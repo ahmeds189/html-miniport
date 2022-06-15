@@ -1,0 +1,83 @@
+.header {
+    padding: 2rem;
+    border-bottom: 6px solid rgb(238, 237, 237);
+    height: 50rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media only screen and (min-width: $bp-large) {
+        flex-direction: row;
+    }
+
+    &__img {
+        display: inline-block;
+        border-radius: 50%;
+        width: 25rem;
+
+        @media only screen and (min-width: $bp-large) {
+            width: 30rem;
+            margin-right: 5rem;
+        }
+    }
+
+    &__text {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 1.6rem;
+        font-weight: 300;
+        color: #888;
+        text-align: center;
+
+        @media only screen and (min-width: $bp-large) {
+            justify-content: flex-start;
+            align-items: flex-start;
+            max-width: 38%;
+        }
+
+        p {
+            font-size: 1.3rem;
+            margin: 1.5rem 0;
+
+            @media only screen and (max-width: $bp-small) {
+                font-size: 1.4rem;
+            }
+
+            @media only screen and (min-width: $bp-large) {
+                font-size: 2rem;
+                margin: 2rem 0 4rem;
+                min-width: none;
+                text-align: start;
+            }
+
+            strong,a {
+                color: $color-dark-1;
+                transition: all .2s;
+            }
+
+            a {
+                color: currentColor;
+            }
+
+            a:hover {
+                color: $secondary-color-1;
+            }
+        }
+
+        .btn {
+            max-width: 30rem;
+
+            @media only screen and (min-width: $bp-large) {
+                max-width: none;
+                padding: 1.5rem 7rem;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,24 @@
+.header-1 {
+    font-size: 3rem;
+	font-weight: 300;
+    color: #3e3e3e;
+
+    strong {
+        font-weight: 700;
+    }
+}
+.header-2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #3e3e3e;
+}
+.header-3 {
+    @extend .header-2;
+    margin: 2rem 0 1rem;
+}
+
+.custom-paragraph {
+    font-size: 1.7rem;
+    color: #888;
+    margin: .5rem 1rem 2rem;
+}

@@ -1,0 +1,41 @@
+.navebar {
+    background-color: $color-dark-1;
+    z-index: 1000;
+    display: inline-block;
+    position: sticky;
+    top: 0;
+    padding: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__top {
+        list-style: none;
+        display: flex;
+    }
+
+    &__link {
+        text-decoration: none;
+        margin-right: .3rem;
+        padding: .5rem 1rem;
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: #fff;
+        border-radius: 4px;
+        transition: all .2s;
+
+        &:hover {
+            background-color: $color-dark-2;
+        }
+
+        @media (hover: hover) {
+
+        }
+        @media (hover: none) {
+
+        }
+
+    }
+}
+
